@@ -2,32 +2,30 @@
 <LinearLayout android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edtUsuario"
-        android:hint="@string/digite_seu_usuario"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edtSenha"
-        android:hint="@string/digite_sua_senha"
-        android:inputType="textPassword"/>
-
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/chkManterConectado"
-        android:text="@string/manter_conectado"/>
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/login"
-        android:onClick="login"/>
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:onClick="logout"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtInfo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar_no_arquivo"
+        android:onClick="salvarArquivo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ler_arquivo"
+        android:onClick="lerArquivo"/>
+
 
 </LinearLayout>
